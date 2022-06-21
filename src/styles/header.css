@@ -1,0 +1,156 @@
+header {
+  height: 100vh;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  gap: 0.2rem;
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.header__container h1 {
+  /* font-size: 5rem; */
+  color: #fff;
+}
+
+.header__container h1 span {
+  color: var(--color-primary);
+}
+
+.text-light {
+  font-size: 1rem;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: var(--color-primary);
+}
+
+.me {
+  background: linear-gradient(var(--color-bg-variant), transparent);
+  width: 27rem;
+  height: 35rem;
+  position: absolute;
+  left: calc(50% - 13.5rem);
+  margin-top: 4rem;
+  border-radius: 15rem 15rem 0 0;
+  overflow: hidden;
+  padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 5), var(--color-white));
+}
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+    padding-top: 1rem;
+  }
+
+  .me {
+    background: transparent;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    min-height: 100vh;
+    padding-top: 0.1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .me {
+    /* background: transparent; */
+    background: linear-gradient(var(--color-bg-variant), transparent);
+    width: 20rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    font-size: 0.9rem;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+}
