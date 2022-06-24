@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/about.css";
 import Me from "../assets/pic1.png";
-import { AiFillTrophy } from "react-icons/ai";
 import { BsAwardFill } from "react-icons/bs";
 
 const About = () => {

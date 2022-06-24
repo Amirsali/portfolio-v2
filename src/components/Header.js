@@ -23,9 +23,10 @@ const Header = () => {
               "Back End",
               800,
               "Full Stack Developer",
-              1000,
+              2000,
             ]}
             loop={Infinity}
+            wrapper="p"
           />
         </h5>
 

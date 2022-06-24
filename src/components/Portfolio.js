@@ -14,7 +14,7 @@ const data = [
     image: IMG1,
     title: "ASTECH-Ecommerce App (MERN Stack with Paypal API)",
     github: "https://github.com/Amirsali/astech-mern",
-    demo: "https://astech-estore-mern.herokuapp.com/",
+    demo: "https://astech-estore.herokuapp.com/",
   },
 
   {
