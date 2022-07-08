@@ -7,6 +7,7 @@ import IMG4 from "../assets/jive.png";
 import IMG5 from "../assets/dropchat.jpg";
 import IMG6 from "../assets/sweetdelights.jpg";
 import IMG7 from "../assets/anstech.png";
+import IMG8 from "../assets/nft-reactnative.png";
 
 const data = [
   {
@@ -61,6 +62,14 @@ const data = [
     title: "ANSTech - landing page (HTML, CSS, VANILLA JAVASCRIPT",
     github: "https://github.com/Amirsali/astech",
     demo: "https://astech-8ac35.web.app/",
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title:
+      "NFT Market - React Native App (Expo, Iphone, Android, Showcase page)",
+    github: "https://github.com/Amirsali/react-native-nftmarket",
+    demo: "https://mobile-nftmarket.web.app/",
   },
 ];
 
