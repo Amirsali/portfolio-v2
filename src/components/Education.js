@@ -12,6 +12,9 @@ import {
   SiPython,
 } from "react-icons/si";
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
+Aos.init({ duration: 2000 });
 
 const Education = () => {
   return (
@@ -20,7 +23,13 @@ const Education = () => {
       <h2>Bachelor's Degree in Information Technology</h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div
+          className="experience__frontend"
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
@@ -68,7 +77,13 @@ const Education = () => {
           </div>
         </div>
 
-        <div className="experience__backend">
+        <div
+          className="experience__backend"
+          data-aos="zoom-in-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
           <h3>Backend Development</h3>
           <div className="experience__content">
             <article className="experience__details">

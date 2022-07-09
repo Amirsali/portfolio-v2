@@ -4,6 +4,9 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import emailjs from "emailjs-com";
+import Aos from "aos";
+import "aos/dist/aos.css";
+Aos.init({ duration: 2000 });
 
 const Contact = () => {
   const form = useRef();
@@ -36,7 +39,13 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
+          <article
+            className="contact__option"
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>muhallimir23@gmail.com</h5>
@@ -44,7 +53,13 @@ const Contact = () => {
               Send a message
             </a>
           </article>
-          <article className="contact__option">
+          <article
+            className="contact__option"
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Amir Mhlli</h5>
@@ -56,7 +71,13 @@ const Contact = () => {
               Send a message
             </a>
           </article>
-          <article className="contact__option">
+          <article
+            className="contact__option"
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
             <RiWhatsappLine className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+639668151371</h5>
@@ -69,7 +90,14 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
           <input
             type="text"
             name="name"
