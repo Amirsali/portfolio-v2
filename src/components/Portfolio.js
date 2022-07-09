@@ -8,6 +8,7 @@ import IMG5 from "../assets/dropchat.jpg";
 import IMG6 from "../assets/sweetdelights.jpg";
 import IMG7 from "../assets/anstech.png";
 import IMG8 from "../assets/nft-reactnative.png";
+import expoImg from "../assets/expo02.png";
 
 const data = [
   {
@@ -48,6 +49,7 @@ const data = [
       "DROP CHAT - React Native App (Firebase, Expo, Register with Profile Photo)",
     github: "https://github.com/Amirsali/Aflixs",
     demo: "https://drop-chat23.web.app/",
+    expo: "https://expo.dev/@amirsali/dropchat?serviceType=classic&distribution=expo-go",
   },
   {
     id: 6,
@@ -70,6 +72,7 @@ const data = [
       "NFT Market - React Native App (Expo, Iphone, Android, Showcase page)",
     github: "https://github.com/Amirsali/react-native-nftmarket",
     demo: "https://mobile-nftmarket.web.app/",
+    expo: "https://expo.dev/@amirsali/native-app",
   },
 ];
 
@@ -79,7 +82,7 @@ const Portfolio = () => {
       <h5>Things That I Can Build For You</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, github, demo, expo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -103,6 +106,28 @@ const Portfolio = () => {
                 >
                   Live Demo
                 </a>
+                {expo && (
+                  <a
+                    href={expo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <img
+                      src={expoImg}
+                      alt="expo"
+                      style={{
+                        width: "15px",
+                        height: "14px",
+                        marginTop: "5px",
+                        marginRight: "7px",
+                        color: "black",
+                      }}
+                    />
+                    Expo Link
+                  </a>
+                )}
               </div>
             </article>
           );
