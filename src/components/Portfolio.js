@@ -87,7 +87,7 @@ const Portfolio = () => {
             <article
               key={id}
               className="portfolio__item"
-              data-aos="fade-down"
+              data-aos="zoom-in"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
