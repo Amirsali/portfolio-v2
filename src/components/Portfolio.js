@@ -8,6 +8,7 @@ import IMG5 from "../assets/dropchat.jpg";
 import IMG6 from "../assets/sweetdelights.jpg";
 import IMG7 from "../assets/anstech.png";
 import IMG8 from "../assets/nft-reactnative.png";
+import IMG9 from "../assets/oh-delivery.jpg";
 import expoImg from "../assets/expo02.png";
 
 const data = [
@@ -69,10 +70,18 @@ const data = [
     id: 8,
     image: IMG8,
     title:
-      "NFT Market - React Native App (Expo, Iphone, Android, Showcase page)",
+      "NFT Market - React Native Marketplace App (Expo, Iphone, Android, Showcase page)",
     github: "https://github.com/Amirsali/react-native-nftmarket",
     demo: "https://mobile-nftmarket.web.app/",
     expo: "https://expo.dev/@amirsali/native-app",
+  },
+  {
+    id: 9,
+    image: IMG9,
+    title:
+      "Oh-Delivery - React Native Food Delivery App (Tailwind-CSS, Redux, Expo, Iphone, Android, Sanity )",
+    github: "https://github.com/Amirsali/oh-delivery",
+    expo: "https://expo.dev/@amirsali/oh-delivery?serviceType=classic&distribution=expo-go",
   },
 ];
 
@@ -105,14 +114,16 @@ const Portfolio = () => {
                 >
                   Github
                 </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
+                {demo && (
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Web Demo
+                  </a>
+                )}
                 {expo && (
                   <a
                     href={expo}

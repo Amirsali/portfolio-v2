@@ -36,6 +36,34 @@
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+  #portfolio {
+    padding-top: 0.1;
+  }
+
+  .portfolio__container {
+    gap: 1rem;
+  }
+
+  .portfolio__item {
+    padding: 0.3rem;
+  }
+
+  .portfolio__item-image > img {
+    border-radius: 2rem;
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .portfolio__item h3 {
+    margin: 1rem 1rem 2rem;
+  }
+
+  .portfolio__item-cta {
+    place-content: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;

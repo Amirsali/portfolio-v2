@@ -47,7 +47,6 @@ header {
 }
 
 .header__container h1 {
-  /* font-size: 5rem; */
   color: #fff;
 }
 
@@ -103,6 +102,40 @@ header {
   transform: rotate(90deg);
   font-weight: 500;
   font-size: 1rem;
+}
+
+/* 125% zoomed media screen */
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+  header {
+    padding-top: 0.1rem;
+  }
+  .header__container {
+    font-size: smaller;
+  }
+  .header__socials {
+    bottom: 2rem;
+  }
+  .header__container h1 {
+    font-size: xx-large;
+  }
+  .text-light {
+    font-size: 0.8rem;
+  }
+  .cta {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .me {
+    background: linear-gradient(var(--color-bg-variant), transparent);
+    width: 24rem;
+    height: 35rem;
+    left: calc(50% - 12rem);
+    margin-top: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .scroll__down {
+    bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {

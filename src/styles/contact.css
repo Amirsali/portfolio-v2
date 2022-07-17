@@ -57,6 +57,27 @@ textarea {
   color: var(--color-white);
 }
 
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+  #contact {
+    padding-top: 0.1rem;
+    height: 100vh;
+  }
+
+  .contact__option {
+    padding: 0.5rem;
+    font-size: small;
+  }
+
+  .contact__option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .contact__option a {
+    margin-top: 0.1rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container.contact__container {
     grid-template-columns: 1fr;
@@ -75,7 +96,6 @@ textarea {
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    /* border: 1px solid transparent; */
     transition: var(--transition);
   }
 
