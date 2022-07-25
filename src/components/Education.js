@@ -10,6 +10,10 @@ import {
   SiFirebase,
   SiMysql,
   SiPython,
+  SiTypescript,
+  SiNextdotjs,
+  SiPhp,
+  SiDotnet,
 } from "react-icons/si";
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
 import Aos from "aos";
@@ -61,6 +65,20 @@ const Education = () => {
               </div>
             </article>
             <article className="experience__details">
+              <SiNextdotjs className="experience__details-icon" />
+              <div>
+                <h4>NextJS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <SiTypescript className="experience__details-icon" />
+              <div>
+                <h4>Typescript</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details">
               <FaBootstrap className="experience__details-icon" />
               <div>
                 <h4>BOOTSTRAP</h4>
@@ -104,7 +122,7 @@ const Education = () => {
               <SiMongodb className="experience__details-icon" />
               <div>
                 <h4>MONGODB</h4>
-                <small className="text-light">Experience</small>{" "}
+                <small className="text-light">Experienced</small>{" "}
               </div>
             </article>
             <article className="experience__details">
@@ -115,10 +133,24 @@ const Education = () => {
               </div>
             </article>
             <article className="experience__details">
+              <SiPhp className="experience__details-icon" />
+              <div>
+                <h4>Php</h4>
+                <small className="text-light">Intermediate</small>{" "}
+              </div>
+            </article>
+            <article className="experience__details">
+              <SiDotnet className="experience__details-icon" />
+              <div>
+                <h4>DotNet</h4>
+                <small className="text-light">Intermediate</small>{" "}
+              </div>
+            </article>
+            <article className="experience__details">
               <SiMysql className="experience__details-icon" />
               <div>
                 <h4>MYSQL</h4>
-                <small className="text-light">Experience</small>{" "}
+                <small className="text-light">Experienced</small>{" "}
               </div>
             </article>
             <article className="experience__details">
